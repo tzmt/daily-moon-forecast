@@ -3,7 +3,7 @@ Contributors: isabel104
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=me%40isabelcastillo%2ecom
 Tags: moon forecast, daily moon, astrology, moon signs, zodiac, horoscope
 Requires at least: 3.4
-Tested up to: 3.8.1
+Tested up to: 3.9
 Stable Tag: 1.4.3
 License: GNU GPL Version 2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -129,7 +129,7 @@ Please [rate the plugin](http://wordpress.org/support/view/plugin-reviews/daily-
 == Changelog ==
 
 = 1.4.3 = 
-* Maintenance: Tested and passed for WP 3.9 compatibility
+* Maintenance: tested and passed for WP 3.9 compatibility.
 
 = 1.4.2 = 
 * Maintenance: removed advertising link, updated plugin link.
