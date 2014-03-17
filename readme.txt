@@ -1,12 +1,10 @@
 ﻿=== Daily Moon Forecast ===
-Author URI: http://isabelcastillo.com
-Plugin URI: http://isabelcastillo.com/docs/category/daily-moon-forecast-wordpress-plugin
 Contributors: isabel104
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=me%40isabelcastillo%2ecom
 Tags: moon forecast, daily moon, astrology, moon signs, zodiac, horoscope
 Requires at least: 3.4
 Tested up to: 3.8.1
-Stable Tag: 1.4.2
+Stable Tag: 1.4.3
 License: GNU GPL Version 2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -40,6 +38,8 @@ For more info, see the [FAQ](http://wordpress.org/plugins/daily-moon-forecast/fa
 
 For Support or suggestions, please use the [Support Forum](http://wordpress.org/support/plugin/daily-moon-forecast).
 
+Fork and hack [on GitHub](https://github.com/isabelc/daily-moon-forecast).
+
 == Installation ==
 
 1. Log in to your WordPress dashboard.
@@ -53,12 +53,6 @@ For Support or suggestions, please use the [Support Forum](http://wordpress.org/
 8. By default, the included forecast interpretations will be used. To write your own custom forecast interpretations for each moon sign, go to "Settings -> Daily Moon Forecast" from your WordPress admin dashboard.
 
 == Frequently Asked Questions ==
-
-= How can I give back? =
-
-[Please rate the plugin, Tweet about it, share it on Facebook](http://isabelcastillo.com/donate/), etc. Thank you. You can also follow me on your favorite social network: [Twitter](https://twitter.com/isabelphp), [Facebook](https://www.facebook.com/isabel.8991/), [Google Plus](https://plus.google.com/111025990685359974539/)
-
-
 
 = Why is it stuck on Aries? =
 
@@ -124,10 +118,18 @@ To style just the icons, use this selector:
 
 `#moonforecast img`
 
+= How can I give back? =
+
+Please [rate the plugin](http://wordpress.org/support/view/plugin-reviews/daily-moon-forecast). Thank you.
+
+
 == Screenshots ==
 1. Daily Moon Forecast - how it looks on your site
 2. Custom Settings panel - back-end
 == Changelog ==
+
+= 1.4.3 = 
+* Maintenance: Tested and passed for WP 3.9 compatibility
 
 = 1.4.2 = 
 * Maintenance: removed advertising link, updated plugin link.
