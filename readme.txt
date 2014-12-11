@@ -22,10 +22,6 @@ The forecast is simply a one-sentence or two-sentence suggestion of the general 
 
 **Languages**
 
-The default language is English. The `.mo` and `.po` translation files are included for the following languages:
-
-- Spanish language
-
 The plugin is translation-ready, and includes a `.pot` file to make it easy for you to translate it into other languages. If your language is not on this list, I’d be happy to add it. Contact me via the [Support Forum](http://wordpress.org/support/plugin/daily-moon-forecast) and tell me the language you’d like to see here.
 
 
@@ -129,7 +125,7 @@ Please [rate the plugin](http://wordpress.org/support/view/plugin-reviews/daily-
 == Changelog ==
 
 = 1.5 =
-* New - Changed textdomain to daily-moon-forecast. Now compatible with WPML.
+* New - Changed textdomain to daily-moon-forecast. Now compatible with WPML. The plugin now has a new .pot localization file.
 * Fix - Shortcode was called incorrectly and generated an error.
 * Tweak - Do singleton PHP class.
 

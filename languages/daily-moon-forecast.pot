@@ -1,0 +1,201 @@
+# Copyright (C) 2014 Daily Moon Forecast
+# This file is distributed under the same license as the Daily Moon Forecast package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Daily Moon Forecast 1.4.2\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/daily-moon-forecast\n"
+"POT-Creation-Date: 2014-12-11 19:27:25+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2014-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#. #-#-#-#-#  plugin.pot (Daily Moon Forecast 1.4.2)  #-#-#-#-#
+#. Plugin Name of the plugin/theme
+#: daily-moon-forecast.php:47 dmf-widget.php:14
+msgid "Daily Moon Forecast"
+msgstr ""
+
+#: daily-moon-forecast.php:54
+msgid "Daily Moon Forecast - Custom Interpretations"
+msgstr ""
+
+#: daily-moon-forecast.php:55
+msgid "Rate This Plugin"
+msgstr ""
+
+#: daily-moon-forecast.php:73
+msgid "Enter your custom interpretation for each Moon sign."
+msgstr ""
+
+#: daily-moon-forecast.php:84 dmf-widget.php:26
+msgid "Aries"
+msgstr ""
+
+#: daily-moon-forecast.php:89 dmf-widget.php:31
+msgid "Taurus"
+msgstr ""
+
+#: daily-moon-forecast.php:94 dmf-widget.php:36
+msgid "Gemini"
+msgstr ""
+
+#: daily-moon-forecast.php:99 dmf-widget.php:41
+msgid "Cancer"
+msgstr ""
+
+#: daily-moon-forecast.php:104 dmf-widget.php:46
+msgid "Leo"
+msgstr ""
+
+#: daily-moon-forecast.php:109 dmf-widget.php:51
+msgid "Virgo"
+msgstr ""
+
+#: daily-moon-forecast.php:114 dmf-widget.php:56
+msgid "Libra"
+msgstr ""
+
+#: daily-moon-forecast.php:119 dmf-widget.php:61
+msgid "Scorpio"
+msgstr ""
+
+#: daily-moon-forecast.php:124 dmf-widget.php:66
+msgid "Sagittarius"
+msgstr ""
+
+#: daily-moon-forecast.php:129 dmf-widget.php:71
+msgid "Capricorn"
+msgstr ""
+
+#: daily-moon-forecast.php:133 dmf-widget.php:76
+msgid "Aquarius"
+msgstr ""
+
+#: daily-moon-forecast.php:138 dmf-widget.php:81
+msgid "Pisces"
+msgstr ""
+
+#: daily-moon-forecast.php:149
+msgid "Moon in %s:"
+msgstr ""
+
+#: daily-moon-forecast.php:204 dmf-widget.php:183
+msgid "Today's Moon Forecast"
+msgstr ""
+
+#: dmf-widget.php:15
+msgid "Display the current moon zodiac sign along with a forecast."
+msgstr ""
+
+#: dmf-widget.php:27
+msgid ""
+"Moon is traveling through Aries today. Watch your head, but do jump in. It's "
+"time to conquer."
+msgstr ""
+
+#: dmf-widget.php:32
+msgid ""
+"Moon is traveling through comfy Taurus today. Eat something you love. Have a "
+"second serving."
+msgstr ""
+
+#: dmf-widget.php:37
+msgid ""
+"Moon is traveling through witty Gemini today. Call, text, send email, write "
+"letters. Visit someone you've missed. Watch a movie and talk about it at a "
+"coffee shop. Be out and about. Don't sleep in."
+msgstr ""
+
+#: dmf-widget.php:42
+msgid ""
+"Moon is traveling through Cancer today. Beware of mood swings. Cook some "
+"soul food. Cuddle up with someone."
+msgstr ""
+
+#: dmf-widget.php:47
+msgid ""
+"Moon is traveling through Leo today. Shine and be proud! You rule right now!"
+msgstr ""
+
+#: dmf-widget.php:52
+msgid ""
+"Moon is traveling through conscientious Virgo today. Watch for nagging. You "
+"probably are correct, but say it nicely. Run errands and don't forget to "
+"floss your teeth."
+msgstr ""
+
+#: dmf-widget.php:57
+msgid ""
+"Moon is traveling through beautiful Libra today. Make it a date night. "
+"Smile, it looks good on you."
+msgstr ""
+
+#: dmf-widget.php:62
+msgid ""
+"Moon is traveling through Scorpio. Beware of jealousy. Passions are easily "
+"aroused. Desire is in the air. It's all or nothing, now. Love or hate, no "
+"middle ground. It's poker-face time."
+msgstr ""
+
+#: dmf-widget.php:67
+msgid ""
+"Moon is traveling through Sagittarius today. The grass looks greener on the "
+"other side during this time. Jump ship. Learn a new language. Tell it like "
+"it is. Make people laugh."
+msgstr ""
+
+#: dmf-widget.php:72
+msgid ""
+"Moon is traveling through Capricorn today. Make a list of goals. Work "
+"overtime. Climb higher. Don't sulk."
+msgstr ""
+
+#: dmf-widget.php:77
+msgid ""
+"Moon is traveling through Aquarius today. Go against the grain. Fight for a "
+"cause. Stand up for the underdog."
+msgstr ""
+
+#: dmf-widget.php:82
+msgid ""
+"Moon is traveling through Pisces today. You may feel disconnected. Serve "
+"others. Listen to music. Paint a picture. Daydream."
+msgstr ""
+
+#: dmf-widget.php:93
+msgid "Moon in %s"
+msgstr ""
+
+#: dmf-widget.php:93
+msgid "crescent moon button"
+msgstr ""
+
+#: dmf-widget.php:93
+msgid " sign glyph symbol"
+msgstr ""
+
+#: dmf-widget.php:189
+msgid "Title:"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid ""
+"http://isabelcastillo.com/docs/category/daily-moon-forecast-wordpress-plugin"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Display the current moon zodiac sign along with a forecast, with option to "
+"add custom forecasts."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Isabel Castillo"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://isabelcastillo.com"
+msgstr ""
