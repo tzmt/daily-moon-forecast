@@ -30,17 +30,24 @@ along with Daily Moon Forecast plugin; if not, If not, see <http://www.gnu.org/l
 if(!class_exists('Daily_Moon_Forecast')) {
 	class Daily_Moon_Forecast{
 
-	    public function __construct() {
-	
-		add_action('admin_menu', array($this, 'add_plugin_page'));
-		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue' ) );
-		add_action( 'plugins_loaded', array( $this, 'plugins_loaded' ) );
-		add_action( 'widgets_init', array( $this, 'register_widgets' ) );
-		add_action('admin_init', array($this, 'page_init'));
-	
-		if( ! defined( 'DMF_PLUGIN_DIR' ) )
-			define( 'DMF_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
-		require_once DMF_PLUGIN_DIR . 'dmf-widget.php';
+		private static $instance = null;
+		public static function get_instance() {
+			if ( null == self::$instance ) {
+				self::$instance = new self;
+			}
+			return self::$instance;
+		}
+		private function __construct() {		
+
+			add_action('admin_menu', array($this, 'add_plugin_page'));
+			add_action( 'wp_enqueue_scripts', array( $this, 'enqueue' ) );
+			add_action( 'plugins_loaded', array( $this, 'plugins_loaded' ) );
+			add_action( 'widgets_init', array( $this, 'register_widgets' ) );
+			add_action('admin_init', array($this, 'page_init'));
+		
+			if( ! defined( 'DMF_PLUGIN_DIR' ) )
+				define( 'DMF_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
+			require_once DMF_PLUGIN_DIR . 'dmf-widget.php';
 	    }
 	
 		public function add_plugin_page(){
@@ -213,5 +220,5 @@ if(!class_exists('Daily_Moon_Forecast')) {
 
 	}
 }
-$Daily_Moon_Forecast = new Daily_Moon_Forecast();
+$Daily_Moon_Forecast = Daily_Moon_Forecast::get_instance();
 add_shortcode( 'dailymoonforecast', array( $Daily_Moon_Forecast, 'dailymoonforecast_shortcode' ) );

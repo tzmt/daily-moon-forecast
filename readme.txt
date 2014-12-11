@@ -130,6 +130,7 @@ Please [rate the plugin](http://wordpress.org/support/view/plugin-reviews/daily-
 
 = 1.5 =
 * Fix - Shortcode was called incorrectly and generated an error.
+* Tweak - Do singleton PHP class.
 
 = 1.4.3 = 
 * Maintenance: tested and passed for WP 3.9 compatibility.
