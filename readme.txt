@@ -129,6 +129,7 @@ Please [rate the plugin](http://wordpress.org/support/view/plugin-reviews/daily-
 == Changelog ==
 
 = 1.5 =
+* New - Changed textdomain to daily-moon-forecast. Now compatible with WPML.
 * Fix - Shortcode was called incorrectly and generated an error.
 * Tweak - Do singleton PHP class.
 

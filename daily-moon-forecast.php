@@ -7,7 +7,7 @@ Version: 1.5-beta1
 Author: Isabel Castillo
 Author URI: http://isabelcastillo.com
 License: GPL2
-Text Domain: dmf
+Text Domain: daily-moon-forecast
 Domain Path: languages
 
 Copyright 2013 - 2014 Isabel Castillo
@@ -51,15 +51,15 @@ if(!class_exists('Daily_Moon_Forecast')) {
 	    }
 	
 		public function add_plugin_page(){
-			add_options_page(__('Daily Moon Forecast', 'dmf'), __('Daily Moon Forecast', 'dmf'), 'manage_options', 'dmf', array($this, 'create_admin_page'));
+			add_options_page(__('Daily Moon Forecast', 'daily-moon-forecast'), __('Daily Moon Forecast', 'daily-moon-forecast'), 'manage_options', 'dmf', array($this, 'create_admin_page'));
 	    }
 		
 		public function create_admin_page(){
 	        ?>
 		<div class="wrap">
 		    <?php screen_icon(); ?>
-		    <h2><?php _e( 'Daily Moon Forecast - Custom Interpretations', 'dmf'); ?></h2>	
-			<br /><a class="button-primary" target="_blank" title="Rate This Plugin" href="http://wordpress.org/support/view/plugin-reviews/daily-moon-forecast"><?php _e('Rate This Plugin', 'dmf'); ?></a>
+		    <h2><?php _e( 'Daily Moon Forecast - Custom Interpretations', 'daily-moon-forecast'); ?></h2>	
+			<br /><a class="button-primary" target="_blank" title="Rate This Plugin" href="http://wordpress.org/support/view/plugin-reviews/daily-moon-forecast"><?php _e('Rate This Plugin', 'daily-moon-forecast'); ?></a>
 		    <form method="post" action="options.php">
 		        <?php
 	                // This prints out all hidden setting fields
@@ -77,7 +77,7 @@ if(!class_exists('Daily_Moon_Forecast')) {
 			// 2nd param is name of the option, will be an array
 			add_settings_section(
 				'dmf_options_main',// unique id for the section
-				__('Enter your custom interpretation for each Moon sign.', 'dmf' ),
+				__('Enter your custom interpretation for each Moon sign.', 'daily-moon-forecast' ),
 				false,// function callback to display
 				'dmf'// page name. Must match the do_settings_sections function call. and match options menu page
 			);	
@@ -88,61 +88,61 @@ if(!class_exists('Daily_Moon_Forecast')) {
 				
 						'aries' => array(
 										'id' => 'aries',
-										'name' => __('Aries', 'dmf')// just capital sign
+										'name' => __('Aries', 'daily-moon-forecast')// just capital sign
 						),
 			
 						'taurus' => array(
 										'id' => 'taurus',
-										'name' => __('Taurus', 'dmf')
+										'name' => __('Taurus', 'daily-moon-forecast')
 						),
 			
 						'gemini' => array(
 										'id' => 'gemini',
-										'name' => __('Gemini', 'dmf')
+										'name' => __('Gemini', 'daily-moon-forecast')
 						),
 			
 						'cancer' => array(
 										'id' => 'cancer',
-										'name' => __('Cancer', 'dmf')
+										'name' => __('Cancer', 'daily-moon-forecast')
 						),
 			
 						'leo' => array(
 										'id' => 'leo',
-										'name' => __('Leo', 'dmf')
+										'name' => __('Leo', 'daily-moon-forecast')
 						),
 			
 						'virgo' => array(
 										'id' => 'virgo',
-										'name' => __('Virgo', 'dmf')
+										'name' => __('Virgo', 'daily-moon-forecast')
 						),
 			
 						'libra' => array(
 										'id' => 'libra',
-										'name' => __('Libra', 'dmf')
+										'name' => __('Libra', 'daily-moon-forecast')
 						),
 			
 						'scorpio' => array(
 										'id' => 'scorpio',
-										'name' => __('Scorpio', 'dmf')
+										'name' => __('Scorpio', 'daily-moon-forecast')
 						),
 			
 						'sagittarius' => array(
 										'id' => 'sagittarius',
-										'name' => __('Sagittarius', 'dmf'),
+										'name' => __('Sagittarius', 'daily-moon-forecast'),
 						),
 			
 						'capricorn' => array(
 										'id' => 'capricorn',
-										'name' => __('Capricorn', 'dmf')
+										'name' => __('Capricorn', 'daily-moon-forecast')
 						),
 						'aquarius' => array(
 										'id' => 'aquarius',
-										'name' => __('Aquarius', 'dmf')
+										'name' => __('Aquarius', 'daily-moon-forecast')
 						),
 			
 						'pisces' => array(
 										'id' => 'pisces',
-										'name' => __('Pisces', 'dmf')
+										'name' => __('Pisces', 'daily-moon-forecast')
 						),
 			
 			); // end $dmf_settings
@@ -153,7 +153,7 @@ if(!class_exists('Daily_Moon_Forecast')) {
 					
 				add_settings_field(
 					$dmf_setting['id'], // unique id for the field
-					sprintf(__( 'Moon in %s:', 'dmf' ), $dmf_setting['name'] ),
+					sprintf(__( 'Moon in %s:', 'daily-moon-forecast' ), $dmf_setting['name'] ),
 					array($this, 'dmfci_textarea_callback'), // callback
 					'dmf',// page name that this is attached to (same as the do_settings_sections)
 					'dmf_options_main',	// the id of the settings section that this goes into (same as the first argument to add_settings_section).
@@ -186,7 +186,7 @@ if(!class_exists('Daily_Moon_Forecast')) {
 			wp_register_style('dmf-style-rtl', plugins_url('/rtl.css', __FILE__) );
 		}
 		public function plugins_loaded() {
-			load_plugin_textdomain( 'dmf', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
+			load_plugin_textdomain( 'daily-moon-forecast', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
 			$wantedPerms = 0755;
 			$actualPerms = substr(sprintf('%o', fileperms(DMF_PLUGIN_DIR . '/sweph/isabelse')), -4);
 			if($actualPerms !== $wantedPerms)
@@ -208,7 +208,7 @@ if(!class_exists('Daily_Moon_Forecast')) {
 			// Configure defaults and extract the attributes into variables
 			extract( shortcode_atts( 
 				array( 
-					'title'  => __('Today\'s Moon Forecast', 'dmf'),
+					'title'  => __('Today\'s Moon Forecast', 'daily-moon-forecast'),
 				), 
 				$atts 
 			));
