@@ -3,7 +3,7 @@
 Plugin Name: Daily Moon Forecast
 Plugin URI: http://isabelcastillo.com/docs/category/daily-moon-forecast-wordpress-plugin
 Description: Display the current moon zodiac sign along with a forecast, with option to add custom forecasts.
-Version: 1.4.3
+Version: 1.5-beta1
 Author: Isabel Castillo
 Author URI: http://isabelcastillo.com
 License: GPL2
@@ -214,4 +214,4 @@ if(!class_exists('Daily_Moon_Forecast')) {
 	}
 }
 $Daily_Moon_Forecast = new Daily_Moon_Forecast();
-add_shortcode( 'dailymoonforecast', array( 'Daily_Moon_Forecast', 'dailymoonforecast_shortcode' ) );
+add_shortcode( 'dailymoonforecast', array( $Daily_Moon_Forecast, 'dailymoonforecast_shortcode' ) );
