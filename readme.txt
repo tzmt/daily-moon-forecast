@@ -129,6 +129,7 @@ Please [rate the plugin](http://wordpress.org/support/view/plugin-reviews/daily-
 * Fix - Shortcode was called incorrectly and generated an error.
 * Tweak - Minify the inline js for increased page speed.
 * Tweak - Do singleton PHP class.
+* Tweak - Do not extract widget args.
 
 = 1.4.3 = 
 * Maintenance: tested and passed for WP 3.9 compatibility.

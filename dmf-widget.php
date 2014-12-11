@@ -132,14 +132,17 @@ class dmf_widget extends WP_Widget {
 
 		wp_enqueue_style('dmf');
 
-		if ( is_rtl() )
+		if ( is_rtl() ) {
 			wp_enqueue_style( 'dmf-style-rtl' );
+		}
 
-		extract( $args );
-		$title = isset($instance['title']) ? apply_filters('widget_title', $instance['title']) : '';
-		echo $before_widget;
-		if ( ! empty( $title ) )
+		$title = apply_filters( 'widget_title', empty( $instance['title'] ) ? __('Today\'s Moon Forecast', 'daily-moon-forecast') : $instance['title'], $instance, $this->id_base ); 
+
+		echo $args['before_widget'];
+
+		if ( $title ) {
 			echo '<h3 class="widget-title">'. $title . '</h3>';
+		}
 
 		// begin output to browser
 		echo '<div id="moonforecast">' . $this->isa_get_moon_forecast($moonlong);
@@ -148,8 +151,8 @@ class dmf_widget extends WP_Widget {
 		echo '<p id="localtime">'; ?><script>var d=new Date();var n=d.toLocaleDateString();var t=d.toLocaleTimeString(); document.write(n + "<br />" + t);</script>
 		<?php echo '</p>';
 		echo "</div>";
-		echo $after_widget;
-	}// end widget
+		echo $args['after_widget'];
+	}
 
 	/**
 	 * Sanitize widget form values as they are saved.
