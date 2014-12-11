@@ -145,14 +145,7 @@ class dmf_widget extends WP_Widget {
 		echo '<div id="moonforecast">' . $this->isa_get_moon_forecast($moonlong);
 
 		// display local date and time
-		echo '<p id="localtime">'; ?>
-				<script>
-					var d=new Date();
-					var n=d.toLocaleDateString();
-					var t=d.toLocaleTimeString(); 
-					document.write(n + "<br />" + t); 
-				</script>
-			
+		echo '<p id="localtime">'; ?><script>var d=new Date();var n=d.toLocaleDateString();var t=d.toLocaleTimeString(); document.write(n + "<br />" + t);</script>
 		<?php echo '</p>';
 		echo "</div>";
 		echo $after_widget;
