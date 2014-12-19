@@ -2,8 +2,8 @@
 Contributors: isabel104
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=me%40isabelcastillo%2ecom
 Tags: moon forecast, daily moon, astrology, moon signs, zodiac, horoscope
-Requires at least: 3.4
-Tested up to: 4.0.1
+Requires at least: 3.7
+Tested up to: 4.1
 Stable tag: 1.5.1
 License: GNU GPL Version 2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -50,6 +50,10 @@ Fork and hack [on GitHub](https://github.com/isabelc/daily-moon-forecast).
 
 == Frequently Asked Questions ==
 
+= How can I enable exec() on Namecheap host? =
+
+[See this](https://www.namecheap.com/support/knowledgebase/article.aspx/9396/2219/how-to-enable-exec) to enable the exec() function on Namecheap host.
+
 = Why is it stuck on Aries? =
 
 The widget being stuck on Aries means that your server did not allow the plugin to "set file permissions." Most web hosting companies allow this. However, there are some that don't allow scripts to set file permissions to 755.  The plugin has been **tested and works** on these widely-used hosting companies:
@@ -57,6 +61,7 @@ The widget being stuck on Aries means that your server did not allow the plugin 
 - GoDaddy
 - DreamHost
 - BlueHost
+- Namecheap
 
 The following web hosts have been found to be **incompatible**:
 
