@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=me%40
 Tags: moon forecast, daily moon, astrology, moon signs, zodiac, horoscope
 Requires at least: 3.4
 Tested up to: 4.0.1
-Stable tag: 1.5
+Stable tag: 1.5.1
 License: GNU GPL Version 2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -69,7 +69,7 @@ The following web hosts have been found to be **incompatible**:
 
 The plugin includes a file that must have permission to execute (CHMOD 755) in order to get the moon's position from the Swiss Ephemeris. The file is:
 
-`daily-moon-forecast/sweph/isabese`
+`daily-moon-forecast/sweph/swetest`
 
 The plugin sets this permission automatically. But, if you feel comfortable with this, you can check this file's permission on your server to be sure.
 
@@ -123,6 +123,9 @@ Please [rate the plugin](http://wordpress.org/support/view/plugin-reviews/daily-
 1. Daily Moon Forecast - how it looks on your site
 2. Custom Settings panel - back-end
 == Changelog ==
+
+= 1.5.1 =
+* Maintenance - Updated sweph binary files which may have been unreadable on some servers.
 
 = 1.5 =
 * New - Changed textdomain to daily-moon-forecast. Now compatible with WPML. The plugin now has a new .pot localization file.

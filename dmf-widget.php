@@ -118,7 +118,7 @@ class dmf_widget extends WP_Widget {
 		$utdate = $time->format('j').'.'.$time->format('n').'.'.$time->format('Y');// day.month.year (single-digit day, month, 4-digit month)
 		$uttime = $time->format('H').'.'.$time->format('i').'.'.$time->format('s');  // HH:MM:SS
 		
-		$sweph = DMF_PLUGIN_DIR . 'sweph'; // set path to isabelse
+		$sweph = DMF_PLUGIN_DIR . 'sweph'; // set path to ephemeris
 		
 		unset($PATH,$moon);
 		$PATH = '';// WordPress is picky picky
@@ -126,7 +126,7 @@ class dmf_widget extends WP_Widget {
 		
 		// get moon, output is array $moon[0] = longitude decimal
 		
-		exec ("isabelse -edir$sweph -b$utdate -ut$uttime -p1 -eswe -fl -g, -head", $moon);
+		exec ("swetest -edir$sweph -b$utdate -ut$uttime -p1 -eswe -fl -g, -head", $moon);
 		
 		$moonlong = isset($moon[0]) ? $moon[0] : '';
 
