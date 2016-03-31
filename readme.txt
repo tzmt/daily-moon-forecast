@@ -51,7 +51,7 @@ Fork and hack [on GitHub](https://github.com/isabelc/daily-moon-forecast).
 
 = How can I enable exec() on Namecheap host? =
 
-[See this](https://www.namecheap.com/support/knowledgebase/article.aspx/9396/2219/how-to-enable-exec) to enable the exec() function on Namecheap host.
+[See this](https://www.namecheap.com/support/knowledgebase/article.aspx/9396/2219/how-to-enable-exec) to enable the `exec()` function on Namecheap host.
 
 = Why is it stuck on Aries? =
 
@@ -64,7 +64,7 @@ There are 2 possible reasons for this.
 - BlueHost
 - Namecheap
 
-**2.**  This plugin uses the PHP exec() function. Some hosting providers disable the exec() function. If this function is disabled is disabled, the plugin will not work. If your host has disabled this function, contact them as they may have a way for you to enable it. (Check their support pages.)
+**2.**  This plugin uses the PHP `exec()` function. Some hosting providers disable the `exec()` function. If this function is disabled is disabled, the plugin will not work. If your host has disabled this function, contact them as they may have a way for you to enable it. (Check their support pages.)
 
 **Manual Troubleshooting**
 
