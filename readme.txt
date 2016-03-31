@@ -1,10 +1,10 @@
-﻿=== Daily Moon Forecast ===
+=== Daily Moon Forecast ===
 Contributors: isabel104
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=me%40isabelcastillo%2ecom
 Tags: moon forecast, daily moon, astrology, moon signs, zodiac, horoscope
 Requires at least: 3.7
-Tested up to: 4.1
-Stable tag: 1.5.1
+Tested up to: 4.5
+Stable tag: 1.5.2
 License: GNU GPL Version 2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -22,8 +22,7 @@ The forecast is simply a one-sentence or two-sentence suggestion of the general 
 
 **Languages**
 
-The plugin is translation-ready, and includes a `.pot` file to make it easy for you to translate it into other languages. If your language is not on this list, I’d be happy to add it. Contact me via the [Support Forum](http://wordpress.org/support/plugin/daily-moon-forecast) and tell me the language you’d like to see here.
-
+The plugin is translation-ready, and includes a `.pot` file to make it easy for you to translate it into other languages. 
 
 **Credits**
 
@@ -52,23 +51,20 @@ Fork and hack [on GitHub](https://github.com/isabelc/daily-moon-forecast).
 
 = How can I enable exec() on Namecheap host? =
 
-[See this](https://www.namecheap.com/support/knowledgebase/article.aspx/9396/2219/how-to-enable-exec) to enable the exec() function on Namecheap host.
+[See this](https://www.namecheap.com/support/knowledgebase/article.aspx/9396/2219/how-to-enable-exec) to enable the `exec()` function on Namecheap host.
 
 = Why is it stuck on Aries? =
 
-The widget being stuck on Aries means that your server did not allow the plugin to "set file permissions." Most web hosting companies allow this. However, there are some that don't allow scripts to set file permissions to 755.  The plugin has been **tested and works** on these widely-used hosting companies:
+There are 2 possible reasons for this. 
+
+**1.**  The widget being stuck on Aries means that your server did not allow the plugin to "set file permissions." Most web hosting companies allow this. However, there are some that don't allow scripts to set file permissions to 755.  The plugin has been **tested and works** on these widely-used hosting companies:
 
 - GoDaddy
 - DreamHost
 - BlueHost
 - Namecheap
 
-The following web hosts have been found to be **incompatible**:
-
-- Bravenet
-- Easyhost.be
-- HostGator
-
+**2.**  This plugin uses the PHP `exec()` function. Some hosting providers disable the `exec()` function. If this function is disabled is disabled, the plugin will not work. If your host has disabled this function, contact them as they may have a way for you to enable it. (Check their support pages.)
 
 **Manual Troubleshooting**
 
@@ -128,6 +124,9 @@ Please [rate the plugin](http://wordpress.org/support/view/plugin-reviews/daily-
 1. Daily Moon Forecast - how it looks on your site
 2. Custom Settings panel - back-end
 == Changelog ==
+
+= 1.5.2 =
+* Maintenance - Changed h2 title tag on settings page to h1.
 
 = 1.5.1 =
 * Maintenance - Updated sweph binary files which may have been unreadable on some servers.

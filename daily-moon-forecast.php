@@ -10,7 +10,7 @@ License: GPL2
 Text Domain: daily-moon-forecast
 Domain Path: languages
 
-Copyright 2013 - 2014 Isabel Castillo
+Copyright 2013 - 2016 Isabel Castillo
 
 This file is part of Daily Moon Forecast plugin.
 
