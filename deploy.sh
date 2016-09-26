@@ -5,9 +5,9 @@
 # The difference is that this script lives in the plugin's git repo & doesn't require an existing SVN repo.
 
 # main config
-PLUGINSLUG="daily-moon-forecast" # returns basename of current directory
+PLUGINSLUG=${PWD##*/} # basename of the directory this file is in
 CURRENTDIR=`pwd`
-MAINFILE="daily-moon-forecast.php" # this should be the name of your main php file in the wordpress plugin
+MAINFILE="${PLUGINSLUG}.php" # this should be the name of your main php file in the wordpress plugin
 SVNUSER="isabel104" # your svn username (case sensitive)
 
 # git config
@@ -15,7 +15,7 @@ GITPATH="$CURRENTDIR/" # this file should be in the base of your git repository
 
 # svn config
 SVNPATH="/tmp/$PLUGINSLUG" # path to a temp SVN repo. No trailing slash required and don't add trunk.
-SVNURL="http://plugins.svn.wordpress.org/$PLUGINSLUG" # Remote SVN repo on wordpress.org, with no trailing slash
+SVNURL="https://plugins.svn.wordpress.org/$PLUGINSLUG" # Remote SVN repo on wordpress.org, with no trailing slash
 
 # Let's begin...
 echo ".........................................."
@@ -66,7 +66,7 @@ cd $SVNPATH/trunk/
 svn status | grep -v "^.[ \t]*\..*" | grep "^?" | awk '{print $2}' | xargs svn add
 svn commit --username=$SVNUSER -m "$COMMITMSG"
 
-# echo "Creating new SVN tag & committing it"
+echo "Creating new SVN tag & committing it"
 cd $SVNPATH
 svn copy trunk/ tags/$NEWVERSION1/
 cd $SVNPATH/tags/$NEWVERSION1
