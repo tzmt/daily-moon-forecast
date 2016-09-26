@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=me%40
 Tags: moon forecast, daily moon, astrology, moon signs, zodiac, horoscope
 Requires at least: 3.7
 Tested up to: 4.6.1
-Stable tag: 1.5.4@todo
+Stable tag: 2.0
 License: GNU GPL Version 2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
