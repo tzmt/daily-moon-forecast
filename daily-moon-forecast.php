@@ -3,7 +3,7 @@
 Plugin Name: Daily Moon Forecast
 Plugin URI: http://isabelcastillo.com/docs/category/daily-moon-forecast-wordpress-plugin
 Description: Display the current moon zodiac sign along with a forecast, with option to add custom forecasts.
-Version: 2.0
+Version: 2.1
 Author: Isabel Castillo
 Author URI: http://isabelcastillo.com
 License: GPL2
@@ -221,7 +221,7 @@ if ( ! class_exists( 'Daily_Moon_Forecast' ) ) {
 	 * Checks if the Ephemeris has the required file permissions.
 	 *
 	 * Attemps to set the proper permission.
-	 * @since 1.5.4
+	 * @since 2.0
 	 * @return bool true if permission is (or gets set to) 0755, otherwise false
 	 */
 	public function is_sweph_executable() {
@@ -258,7 +258,7 @@ if ( ! class_exists( 'Daily_Moon_Forecast' ) ) {
 
 	/**
 	 * Add admin notice when file permissions on ephemeris will not permit the plugin to work.
-	 * @since 1.5.4
+	 * @since 2.0
 	 */
 	public function admin_notice_chmod_failed() {
 
@@ -271,7 +271,7 @@ if ( ! class_exists( 'Daily_Moon_Forecast' ) ) {
 
 	/**
 	 * Add admin notice when site is hosted on Windows server.
-	 * @since 1.5.4
+	 * @since 2.0
 	 */
 	public function admin_notice_windows_server() {
 
@@ -283,7 +283,7 @@ if ( ! class_exists( 'Daily_Moon_Forecast' ) ) {
 	}
 	/**
 	 * Determines whether the current page is a DMF admin page or the main plugins.php page.
-	 * @since 1.5.4
+	 * @since 2.0
 	 */
 	public function is_plugin_admin_page() {
 		global $pagenow;

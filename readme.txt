@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=me%40
 Tags: moon forecast, daily moon, astrology, moon signs, zodiac, horoscope
 Requires at least: 3.7
 Tested up to: 4.6.1
-Stable tag: 2.0
+Stable tag: 2.1
 License: GNU GPL Version 2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -114,6 +114,9 @@ Please [rate the plugin](http://wordpress.org/support/view/plugin-reviews/daily-
 2. Custom Settings panel - back-end
 == Changelog ==
 
+= 2.1 =
+* Maintenance - Updated .pot language file.
+
 = 2.0 =
 * Fix - Added a solution for sites using Windows hosting. Previously, the ephemeris would not work on sites using Windows hosting.
 * Fix - File permissions were not being checked properly which was causing ephemeris not to work on some sites.
@@ -168,6 +171,9 @@ Please [rate the plugin](http://wordpress.org/support/view/plugin-reviews/daily-
 = 1.0 =
 * Initial release of the WP plugin.
 == Upgrade Notice ==
+
+= 2.1 =
+2.x has IMPORTANT FIXES for ALL sites, especially for sites using Windows hosting.
 
 = 2.0 =
 Important fixes for ALL sites, especially for sites using Windows hosting.
