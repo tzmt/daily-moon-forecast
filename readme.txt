@@ -3,8 +3,8 @@ Contributors: isabel104
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=me%40isabelcastillo%2ecom
 Tags: moon forecast, daily moon, astrology, moon signs, zodiac, horoscope
 Requires at least: 3.7
-Tested up to: 4.6
-Stable tag: 1.5.4
+Tested up to: 4.6.1
+Stable tag: 1.5.4@todo
 License: GNU GPL Version 2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -12,68 +12,57 @@ Display the current transiting moon zodiac sign and interpretation forecast, wit
 
 == Description ==
 
-**New since version 1.3.4: use the shortcode to insert Daily Moon Forecast on any page or post:**
-
-`[dailymoonforecast]`
-
 Daily Moon Forecast plugin adds a widget to WordPress that displays the current moon zodiac sign along with a forecast, which updates automatically as the moon sign changes. The widget also displays the current local date and time of the viewer, as given by the viewer's browser. 
 
 The forecast is simply a one-sentence or two-sentence suggestion of the general mood in the air according to the zodiac sign the moon is in. Twelve forecasts are included, one for each of the twelve zodiac signs. By default, the widget will use the included forecasts. You have the option to write your own custom forecast for each moon sign in **Settings -> Daily Moon Forecast**.
 
+Daily Moon Forecast uses the Swiss Ephemeris to get the longitude of the Moon.
+
 **Languages**
 
-The plugin is translation-ready, and includes a `.pot` file to make it easy for you to translate it into other languages. 
+The plugin is translation-ready, and includes a catalog `.pot` file to make it easy for you to translate it into other languages. 
 
-**Credits**
+For more info, see the FAQ, the Installation instructions (links above), or the [plugin web page](http://isabelcastillo.com/docs/category/daily-moon-forecast-wordpress-plugin "Daily Moon Forecast plugin").
 
-Daily Moon Forecast uses the Swiss Ephemeris to get the longitude of the Moon. Learn more about the [Swiss Ephemeris](http://www.astro.com/swisseph/swephinfo_e.htm)
-
-
-For more info, see the [FAQ](http://wordpress.org/plugins/daily-moon-forecast/faq/), the Installation instructions (link above), or the [plugin web page](http://isabelcastillo.com/docs/category/daily-moon-forecast-wordpress-plugin).
-
-For Support or suggestions, please use the [Support Forum](http://wordpress.org/support/plugin/daily-moon-forecast).
+For Support or suggestions, please use the official Support Forum (link above).
 
 Fork and hack [on GitHub](https://github.com/isabelc/daily-moon-forecast).
 
 == Installation ==
 
-1. Log in to your WordPress dashboard.
-2. Go to `Plugins -> Add New`
-3. Click 'Upload', then upload the plugin file that you downloaded.
-4. Activate the plugin by clicking "Activate".
-5. The Daily Moon Forecast widget will be available in `Appearance -> Widgets`
-6. To use the widget, drag the widget to a sidebar widget area like you would any other widget.
-7. To insert Daily Moon Forecast on any page or post, type this shortcode into the page or post:
+**Install and Activate**
+
+1. Install and activate the plugin in your WordPress dashboard by going to Plugins –> Add New. 
+2. Search for "Daily Moon Forecast" to find the plugin.
+3. When you see it, click “Install Now” to install the plugin.
+4. Click “Activate” to activate the plugin.
+
+**Quick Setup**
+
+1. To use Daily Moon Forecast as a widget, go to `Appearance -> Widgets` and drag the "Daily Moon Forecast" widget to a sidebar widget area like you would any other widget.
+2. To insert Daily Moon Forecast on any page or post, type this shortcode into the page or post:
 	`[dailymoonforecast]`
-8. By default, the included forecast interpretations will be used. To write your own custom forecast interpretations for each moon sign, go to "Settings -> Daily Moon Forecast" from your WordPress admin dashboard.
+3. By default, the included forecast interpretations will be used. To write your own custom forecast interpretations for each moon sign, go to "Settings -> Daily Moon Forecast" from your WordPress admin dashboard.
+
+**If your website uses Windows hosting**
+
+If your website is running on a Windows operating system (i.e. using Windows hosting), then you’ll need to use the [ZodiacPress Windows Server](https://cosmicplugins.com/downloads/zodiacpress-windows-server/) plugin to make the Ephemeris work on your server. This is because the Ephemeris included in Daily Moon Forecast will not run on Windows, by default. Just install and activate the “ZodiacPress Windows Server” plugin, and it will automatically solve this problem.
 
 == Frequently Asked Questions ==
+
+= Why is it stuck on Aries? =
+
+There are 3 possible reasons for the widget to be stuck on Aries.
+
+**1.**  If your website is running on a Windows operating system (i.e. using Windows hosting), then you’ll need to use the [ZodiacPress Windows Server](https://cosmicplugins.com/downloads/zodiacpress-windows-server/) plugin to make the Ephemeris work on your server. This is because the Ephemeris included in Daily Moon Forecast will not run on Windows, by default. Just install and activate the “ZodiacPress Windows Server” plugin, and it will automatically solve this problem. Note that ZP Windows Server only works with Daily Moon Forecast version 2.0+, not with early versions of Daily Moon Forecast.
+
+**2.**  This plugin uses the PHP exec() function. Some hosting providers disable the exec() function. If this function is disabled, the plugin will not work. If your host has disabled this function, contact them as they may have a way for you to enable it. (Check their support pages.)
+
+**3.**  It may be that your server did not allow the plugin to set the proper file permissions for the Swiss Ephemeris. [See this](http://isabelcastillo.com/docs/setting-file-permissions-swetest) for help.
 
 = How can I enable exec() on Namecheap host? =
 
 [See this](https://www.namecheap.com/support/knowledgebase/article.aspx/9396/2219/how-to-enable-exec) to enable the `exec()` function on Namecheap host.
-
-= Why is it stuck on Aries? =
-
-There are 2 possible reasons for this. 
-
-**1.**  The widget being stuck on Aries means that your server did not allow the plugin to "set file permissions." Most web hosting companies allow this. However, there are some that don't allow scripts to set file permissions to 755.  The plugin has been **tested and works** on these widely-used hosting companies:
-
-- GoDaddy
-- DreamHost
-- BlueHost
-- Namecheap
-
-**2.**  This plugin uses the PHP `exec()` function. Some hosting providers disable the `exec()` function. If this function is disabled is disabled, the plugin will not work. If your host has disabled this function, contact them as they may have a way for you to enable it. (Check their support pages.)
-
-**Manual Troubleshooting**
-
-The plugin includes a file that must have permission to execute (CHMOD 755) in order to get the moon's position from the Swiss Ephemeris. The file is:
-
-`daily-moon-forecast/sweph/swetest`
-
-The plugin sets this permission automatically. But, if you feel comfortable with this, you can check this file's permission on your server to be sure.
-
 
 = I don't like it centered. How can I left-align the widget? =
 
@@ -125,6 +114,10 @@ Please [rate the plugin](http://wordpress.org/support/view/plugin-reviews/daily-
 2. Custom Settings panel - back-end
 == Changelog ==
 
+= 2.0 =
+* Fix - Added a solution for sites using Windows hosting. Previously, the ephemeris would not work on sites using Windows hosting.
+* Fix - File permissions were not being checked properly which was causing ephemeris not to work on some sites.
+
 = 1.5.4 =
 * Maintenance - Removed stray file, widget.php.
 
@@ -170,11 +163,14 @@ Please [rate the plugin](http://wordpress.org/support/view/plugin-reviews/daily-
 
 = 1.1 =
 * New: ability to add custom interpretations.
-* New: added translations for langauges: Croatian, French, Hindi, Portuguese, Serbian, Spanish
+* New: added translations for languages: Croatian, French, Hindi, Portuguese, Serbian, Spanish
 
 = 1.0 =
 * Initial release of the WP plugin.
 == Upgrade Notice ==
+
+= 2.0 =
+Important fixes for ALL sites, especially for sites using Windows hosting.
 
 = 1.5 =
 Fix - Shortcode was called incorrectly and generated an error.

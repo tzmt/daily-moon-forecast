@@ -111,25 +111,6 @@ class dmf_widget extends WP_Widget {
 
 	public function widget( $args, $instance ) {
 
-		// get UT/GMT time for exec */
-		
-		$time = new DateTime('now', new DateTimeZone('UTC'));
-		
-		$utdate = $time->format('j').'.'.$time->format('n').'.'.$time->format('Y');// day.month.year (single-digit day, month, 4-digit month)
-		$uttime = $time->format('H').'.'.$time->format('i').'.'.$time->format('s');  // HH:MM:SS
-		
-		$sweph = DMF_PLUGIN_DIR . 'sweph'; // set path to ephemeris
-		
-		unset($PATH,$moon);
-		$PATH = '';// WordPress is picky picky
-		putenv("PATH=$PATH:$sweph");
-		
-		// get moon, output is array $moon[0] = longitude decimal
-		
-		exec ("swetest -edir$sweph -b$utdate -ut$uttime -p1 -eswe -fl -g, -head", $moon);
-		
-		$moonlong = isset($moon[0]) ? $moon[0] : '';
-
 		wp_enqueue_style('dmf');
 
 		if ( is_rtl() ) {
@@ -144,7 +125,32 @@ class dmf_widget extends WP_Widget {
 			echo '<h3 class="widget-title">'. $title . '</h3>';
 		}
 
-		// begin output to browser
+		// get UT/GMT time for exec */
+		
+		$time = new DateTime('now', new DateTimeZone('UTC'));
+		
+		$utdate = $time->format('j').'.'.$time->format('n').'.'.$time->format('Y');// day.month.year (single-digit day, month, 4-digit month)
+		$uttime = $time->format('H').'.'.$time->format('i').'.'.$time->format('s');// HH:MM:SS
+		
+		// set path to ephemeris
+		$sweph = apply_filters( 'zp_sweph_dir', DMF_PLUGIN_DIR . 'sweph' );
+		$PATH = '';
+		putenv("PATH=$PATH:$sweph");
+		$swetest = apply_filters( 'zp_sweph_file', 'swetest' );
+
+		unset( $moon );
+
+		// get moon, output is array $moon[0] = longitude decimal
+		
+		exec ("$swetest -edir$sweph -b$utdate -ut$uttime -p1 -eswe -fl -g, -head", $moon);
+		
+		$moonlong = isset($moon[0]) ? $moon[0] : '';
+
+		if ( ! $moonlong ) {
+			echo $args['after_widget'];
+			return;			
+		}
+
 		echo '<div id="moonforecast">' . $this->isa_get_moon_forecast($moonlong);
 
 		// display local date and time

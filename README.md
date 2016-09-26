@@ -5,8 +5,6 @@ Daily Moon Forecast plugin adds a widget to WordPress that displays the current 
 
 The forecast is simply a one-sentence or two-sentence suggestion of the general mood in the air according to the zodiac sign the moon is in. Twelve forecasts are included, one for each of the twelve zodiac signs. By default, the widget will use the included forecasts. You have the option to write your own custom forecast for each moon sign in **Settings -> Daily Moon Forecast**.
 
-**Credits**
+Daily Moon Forecast uses the Swiss Ephemeris to get the longitude of the Moon.
 
-Daily Moon Forecast uses the Swiss Ephemeris to get the longitude of the Moon. Learn more about the [Swiss Ephemeris](http://www.astro.com/swisseph/swephinfo_e.htm)
-
-For more info, see the [FAQ](http://wordpress.org/plugins/daily-moon-forecast/faq/) and the [plugin web page](http://isabelcastillo.com/docs/category/daily-moon-forecast-wordpress-plugin).
+For more info, see the [FAQ](http://wordpress.org/plugins/daily-moon-forecast/faq/) and the [plugin web page](http://isabelcastillo.com/docs/category/daily-moon-forecast-wordpress-plugin "Daily Moon Forecast plugin").
