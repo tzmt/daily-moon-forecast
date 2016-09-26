@@ -1,89 +1,106 @@
-# Copyright (C) 2014 Daily Moon Forecast
+# Copyright (C) 2016 Daily Moon Forecast
 # This file is distributed under the same license as the Daily Moon Forecast package.
 msgid ""
 msgstr ""
-"Project-Id-Version: Daily Moon Forecast 1.4.2\n"
-"Report-Msgid-Bugs-To: http://wordpress.org/tag/daily-moon-forecast\n"
-"POT-Creation-Date: 2014-12-11 19:27:25+00:00\n"
+"Project-Id-Version: Daily Moon Forecast 2.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/daily-moon-"
+"forecast\n"
+"POT-Creation-Date: 2016-09-26 19:49:36+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2014-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2016-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 
-#. #-#-#-#-#  plugin.pot (Daily Moon Forecast 1.4.2)  #-#-#-#-#
+#. #-#-#-#-#  plugin.pot (Daily Moon Forecast 2.0)  #-#-#-#-#
 #. Plugin Name of the plugin/theme
-#: daily-moon-forecast.php:47 dmf-widget.php:14
+#: daily-moon-forecast.php:54 dmf-widget.php:14
 msgid "Daily Moon Forecast"
 msgstr ""
 
-#: daily-moon-forecast.php:54
+#: daily-moon-forecast.php:61
 msgid "Daily Moon Forecast - Custom Interpretations"
 msgstr ""
 
-#: daily-moon-forecast.php:55
+#: daily-moon-forecast.php:62
 msgid "Rate This Plugin"
 msgstr ""
 
-#: daily-moon-forecast.php:73
+#: daily-moon-forecast.php:78
 msgid "Enter your custom interpretation for each Moon sign."
 msgstr ""
 
-#: daily-moon-forecast.php:84 dmf-widget.php:26
+#: daily-moon-forecast.php:87 dmf-widget.php:26
 msgid "Aries"
 msgstr ""
 
-#: daily-moon-forecast.php:89 dmf-widget.php:31
+#: daily-moon-forecast.php:92 dmf-widget.php:31
 msgid "Taurus"
 msgstr ""
 
-#: daily-moon-forecast.php:94 dmf-widget.php:36
+#: daily-moon-forecast.php:97 dmf-widget.php:36
 msgid "Gemini"
 msgstr ""
 
-#: daily-moon-forecast.php:99 dmf-widget.php:41
+#: daily-moon-forecast.php:102 dmf-widget.php:41
 msgid "Cancer"
 msgstr ""
 
-#: daily-moon-forecast.php:104 dmf-widget.php:46
+#: daily-moon-forecast.php:107 dmf-widget.php:46
 msgid "Leo"
 msgstr ""
 
-#: daily-moon-forecast.php:109 dmf-widget.php:51
+#: daily-moon-forecast.php:112 dmf-widget.php:51
 msgid "Virgo"
 msgstr ""
 
-#: daily-moon-forecast.php:114 dmf-widget.php:56
+#: daily-moon-forecast.php:117 dmf-widget.php:56
 msgid "Libra"
 msgstr ""
 
-#: daily-moon-forecast.php:119 dmf-widget.php:61
+#: daily-moon-forecast.php:122 dmf-widget.php:61
 msgid "Scorpio"
 msgstr ""
 
-#: daily-moon-forecast.php:124 dmf-widget.php:66
+#: daily-moon-forecast.php:127 dmf-widget.php:66
 msgid "Sagittarius"
 msgstr ""
 
-#: daily-moon-forecast.php:129 dmf-widget.php:71
+#: daily-moon-forecast.php:132 dmf-widget.php:71
 msgid "Capricorn"
 msgstr ""
 
-#: daily-moon-forecast.php:133 dmf-widget.php:76
+#: daily-moon-forecast.php:136 dmf-widget.php:76
 msgid "Aquarius"
 msgstr ""
 
-#: daily-moon-forecast.php:138 dmf-widget.php:81
+#: daily-moon-forecast.php:141 dmf-widget.php:81
 msgid "Pisces"
 msgstr ""
 
-#: daily-moon-forecast.php:149
+#: daily-moon-forecast.php:150
 msgid "Moon in %s:"
 msgstr ""
 
-#: daily-moon-forecast.php:204 dmf-widget.php:183
+#: daily-moon-forecast.php:210 dmf-widget.php:120 dmf-widget.php:185
 msgid "Today's Moon Forecast"
+msgstr ""
+
+#: daily-moon-forecast.php:266
+msgid ""
+"Your server did not allow Daily Moon Forecast to set the necessary file "
+"permissions for the Ephemeris. Daily Moon Forecast requires this in order to "
+"show the correct position of the moon. <a href=\"%s\" target=\"_blank\" rel="
+"\"nofollow\">See this</a> to fix it."
+msgstr ""
+
+#: daily-moon-forecast.php:279
+msgid ""
+"ERROR: Your website server is using a Windows operating system (Windows "
+"hosting). For Daily Moon Forecast to work on your server, you need the \"ZP "
+"Windows Server\" plugin. See <a href=\"%s\" target=\"_blank\" rel=\"nofollow"
+"\">this</a> for details."
 msgstr ""
 
 #: dmf-widget.php:15
@@ -177,7 +194,7 @@ msgstr ""
 msgid " sign glyph symbol"
 msgstr ""
 
-#: dmf-widget.php:189
+#: dmf-widget.php:191
 msgid "Title:"
 msgstr ""
 
