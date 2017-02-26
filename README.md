@@ -7,4 +7,4 @@ The forecast is simply a one-sentence or two-sentence suggestion of the general 
 
 Daily Moon Forecast uses the Swiss Ephemeris to get the longitude of the Moon.
 
-For more info, see the [FAQ](http://wordpress.org/plugins/daily-moon-forecast/faq/) and the [plugin web page](http://isabelcastillo.com/docs/category/daily-moon-forecast-wordpress-plugin "Daily Moon Forecast plugin").
+For more info, see the [FAQ](http://wordpress.org/plugins/daily-moon-forecast/faq/) and the [plugin web page](https://isabelcastillo.com/docs/about-daily-moon-forecast-wordpress-plugin).

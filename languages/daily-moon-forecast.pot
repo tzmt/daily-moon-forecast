@@ -200,7 +200,7 @@ msgstr ""
 
 #. Plugin URI of the plugin/theme
 msgid ""
-"http://isabelcastillo.com/docs/category/daily-moon-forecast-wordpress-plugin"
+"https://isabelcastillo.com/docs/about-daily-moon-forecast-wordpress-plugin"
 msgstr ""
 
 #. Description of the plugin/theme

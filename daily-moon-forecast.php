@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Daily Moon Forecast
-Plugin URI: http://isabelcastillo.com/docs/category/daily-moon-forecast-wordpress-plugin
+Plugin URI: https://isabelcastillo.com/docs/about-daily-moon-forecast-wordpress-plugin
 Description: Display the current moon zodiac sign along with a forecast, with option to add custom forecasts.
 Version: 2.1
 Author: Isabel Castillo
@@ -263,7 +263,7 @@ if ( ! class_exists( 'Daily_Moon_Forecast' ) ) {
 	public function admin_notice_chmod_failed() {
 
 		if ( $this->is_plugin_admin_page() ) {
-			$msg = sprintf( __( 'Your server did not allow Daily Moon Forecast to set the necessary file permissions for the Ephemeris. Daily Moon Forecast requires this in order to show the correct position of the moon. <a href="%s" target="_blank" rel="nofollow">See this</a> to fix it.', 'daily-moon-forecast' ), 'http://isabelcastillo.com/docs/setting-file-permissions-swetest' );
+			$msg = sprintf( __( 'Your server did not allow Daily Moon Forecast to set the necessary file permissions for the Ephemeris. Daily Moon Forecast requires this in order to show the correct position of the moon. <a href="%s" target="_blank" rel="nofollow">See this</a> to fix it.', 'daily-moon-forecast' ), 'https://isabelcastillo.com/docs/about-daily-moon-forecast-wordpress-plugin#swetest' );
 
 			printf( '<div class="notice notice-error is-dismissible"><p>%s</p></div>', $msg );
 		}
