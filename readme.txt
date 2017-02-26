@@ -3,8 +3,8 @@ Contributors: isabel104
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=me%40isabelcastillo%2ecom
 Tags: moon forecast, daily moon, astrology, moon signs, zodiac, horoscope
 Requires at least: 3.7
-Tested up to: 4.6.1
-Stable tag: 2.1
+Tested up to: 4.7.2
+Stable tag: 2.1.1
 License: GNU GPL Version 2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -113,6 +113,10 @@ Please [rate the plugin](http://wordpress.org/support/view/plugin-reviews/daily-
 1. Daily Moon Forecast - how it looks on your site
 2. Custom Settings panel - back-end
 == Changelog ==
+
+= 2.1.1 =
+* Tweak - Updated links to plugin URL and documentation.
+* Tweak - Textdomain loading should be delayed until the init action.
 
 = 2.1 =
 * Maintenance - Updated .pot language file.
