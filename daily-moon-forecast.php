@@ -42,6 +42,7 @@ if ( ! class_exists( 'Daily_Moon_Forecast' ) ) {
 			add_action( 'admin_menu', array( $this, 'add_plugin_page' ) );
 			add_action( 'wp_enqueue_scripts', array( $this, 'enqueue' ) );
 			add_action( 'plugins_loaded', array( $this, 'plugins_loaded' ) );
+			add_action( 'init', array( $this, 'load_textdomain' ) );
 			add_action( 'widgets_init', array( $this, 'register_widgets' ) );
 			add_action( 'admin_init', array( $this, 'page_init' ) );
 		
@@ -176,12 +177,16 @@ if ( ! class_exists( 'Daily_Moon_Forecast' ) ) {
 			wp_register_style('dmf-style-rtl', plugins_url('/rtl.css', __FILE__) );
 		}
 		/**
-		 * Load textdomain and run necessary checks for plugin to work.
+		 * Load textdomain.
+		 */
+		public function load_textdomain() {
+			load_plugin_textdomain( 'daily-moon-forecast', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
+		}
+
+		/**
+		 * Run necessary checks for plugin to work.
 		 */
 		public function plugins_loaded() {
-
-			load_plugin_textdomain( 'daily-moon-forecast', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
-
 			$this->is_sweph_executable();
 
 			// Is this site hosted on Windows?
